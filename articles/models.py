@@ -6,3 +6,6 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateTimeField()
+
+    def __str__(self):
+        return self.title
