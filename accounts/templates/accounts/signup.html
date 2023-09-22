@@ -2,7 +2,10 @@
 
 {% block content %}
     <h1>Sign Up</h1>
-    <div class="accounts">
-        
-    </div>
+    
+    <form class="site-form" action="/accounts/signup" method="">
+        {{ form }}
+        <input type="submit" value="Signup">
+    </form>
+     
 {% endblock %}
