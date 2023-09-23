@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1><a href="{% url 'home' %}">Blog App logo here</a></h1>
+    <h1><a href="{% url 'home' %}"><img height="100px" src="{% static 'img/logo.png' %}" alt="logo"></a></h1>
     <nav>
         <ul>
             {% if user.is_authenticated %}
