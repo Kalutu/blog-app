@@ -7,6 +7,7 @@ app_name = "articles"
 
 urlpatterns = [
     path('', article_list, name='list'),
+    path('create/', article_create, name='create'),
     path('<slug>/', article_detail, name='detail'),
 ]
 
