@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Article Create</h1>
-    
+<div class="article-create">
+    <h1>Create a new article</h1>
+    <form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create">
+    </form>
+</div>
+   
 {% endblock %}
