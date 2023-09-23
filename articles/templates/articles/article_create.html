@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block content %}
 <div class="article-create">
@@ -9,5 +11,6 @@
         <input type="submit" value="Create">
     </form>
 </div>
-   
+<script src="../../static/js/slugify.js"></script>
 {% endblock %}
+
