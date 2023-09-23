@@ -8,3 +8,6 @@ A Django blog app for creating and managing articles.
 - User comments
 - Article search functionality
 - Responsive design for mobile and desktop
+
+## Contributing
+Contributions are welcome! If you have any ideas, suggestions, or discover issues, please create a GitHub issue or fork the repository and submit a pull request.
