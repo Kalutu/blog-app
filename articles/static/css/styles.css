@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: #00dba0;
+}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
