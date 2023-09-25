@@ -55,7 +55,7 @@ nav button{
 
 .articles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
 
@@ -64,11 +64,19 @@ nav button{
     border: 1px solid #00dba0;
     position: relative;
     padding-bottom: 40px;
+    background-color: #fff;
+    color: black;
+}
+
+.black{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .article h2{
     font-size: 1.2em;
-
+    color: black;
 }
 
 .article .author{
