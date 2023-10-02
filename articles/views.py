@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import *
 from django.contrib.auth.decorators import login_required
 from .forms import *
+from django.contrib import messages
 
 # Create your views here.
 def article_list(request):
@@ -28,3 +29,11 @@ def article_create(request):
     else:
         form = CreateArticle()
     return render(request, 'articles/article_create.html', {"form":form})
+
+def article_delete(request, pk):
+   queryset = Article.objects.get(id=pk)
+   if request.method == 'POST':
+       queryset.delete()
+       messages.success(request, 'Article deleted successfully')
+       return redirect('articles:list')
+   return render(request, 'articles/delete.html')

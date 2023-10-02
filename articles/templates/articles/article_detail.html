@@ -8,6 +8,8 @@
             <img src="..{{ article.thumb.url }}" width=100%>
             <p>{{ article.body }}</p>
             <p>{{ article.date }}</p>
+            
         </div>   
+        <a href="{% url 'articles:delete' article.id %}"><div class="btn btn-primary">Delete</div></a>
     </div>
 {% endblock %}
