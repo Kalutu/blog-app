@@ -37,3 +37,14 @@ def article_delete(request, pk):
        messages.success(request, 'Article deleted successfully')
        return redirect('articles:list')
    return render(request, 'articles/delete.html')
+
+def article_edit(request, pk):
+   queryset = Article.objects.get(id=pk)
+   form = EditArticle(instance=queryset)
+   if request.method == 'POST':
+       form = EditArticle(request.POST, instance=queryset)
+       if form.is_valid():        
+            form.save()
+            messages.success(request, 'Article updated successfully')
+            return redirect('articles:list')
+   return render(request, 'articles/edit_article.html', {"form": form})

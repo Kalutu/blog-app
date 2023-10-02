@@ -9,6 +9,7 @@ urlpatterns = [
     path('', article_list, name='list'),
     path('create/', article_create, name='create'),
     path('<slug>/', article_detail, name='detail'),
+    path('edit/<str:pk>/', article_edit, name="edit"),
     path('delete/<str:pk>/', article_delete, name="delete"),
 ]
 

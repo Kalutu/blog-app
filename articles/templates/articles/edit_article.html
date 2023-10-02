@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="article-update">
+    <h1>Create a new article</h1>
+    <form class="site-form" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Update">
+    </form>
+</div>
+{% endblock %}
