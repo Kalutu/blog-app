@@ -5,12 +5,14 @@
     <div class="article_detail">
         <div class="article">
             <h2>{{ article.title }}</h2>
-            <img src="..{{ article.thumb.url }}" width=100%>
+            <img class="mb-3" src="..{{ article.thumb.url }}" width="100%">
             <p>{{ article.body }}</p>
             <p>{{ article.date }}</p>
             
-        </div>   
-        <a href="{% url 'articles:delete' article.id %}"><div class="btn btn-primary">Delete</div></a>
-        <a href="{% url 'articles:edit' article.id %}"><div class="btn btn-primary">Edit</div></a>
+            <div class="d-flex justify-content-end mb-3">
+                <a href="{% url 'articles:edit' article.id %}" class="btn btn-success me-3 pr-5 pl-5">Edit</a>
+                <a href="{% url 'articles:delete' article.id %}" class="btn btn-danger me-3">Delete</a>
+            </div>
+        </div>        
     </div>
 {% endblock %}

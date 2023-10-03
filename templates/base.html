@@ -20,12 +20,12 @@
                 <li>
                     <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-danger end">{{ user }} | Logout</button>
+                        <button type="submit" class="btn btn-danger me-5">{{ user }} | Logout</button>
                     </form>
                 </li>
                 {% else %}
                 <li><a href="{% url 'accounts:login' %}" class="btn btn-success">Login</a></li>
-                <li><a href="{% url 'accounts:signup' %}" class="btn btn-info">Signup</a></li>
+                <li><a href="{% url 'accounts:signup' %}" class="btn btn-info me-5">Signup</a></li>
                 {% endif %} 
             </ul>
         </nav>
