@@ -113,7 +113,7 @@ nav button{
 
 .site-form input, .site-form textarea {
     display: block;
-    margin: 20px 0 0 0;
+    margin: 10px 0 10px 0;
     padding: 10px;
 }
 
@@ -136,7 +136,7 @@ a.highlight {
 .helptext, .helptext ul{
     margin: 0 auto 20px;
     color: #bbb;
-    font-size: 0.9em;
+    font-size: 1.0em;
     display: block;
 }
 
