@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="logo"></a></h1>
+        <a href="{% url 'home' %}"><img class="img-fluid" src="{% static 'img/logo.png' %}" alt="logo"></a>
         <nav>
             <ul>
                 {% if user.is_authenticated %}
